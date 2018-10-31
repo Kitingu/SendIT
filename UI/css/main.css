@@ -10,7 +10,7 @@ body{
 }
 nav{
     flex:0 0 auto;
-    background: #0D1313;
+    background: rgba(0,0,0,0.7);
     color: #fff;
 }
 
@@ -138,7 +138,7 @@ footer{
     transition: transform 2s;
 }
 .footer-icons .fa:hover{
-    color: #4CAF50;
+    color: #2b98f0;
     transform:translateY(-15px);
 }
 
