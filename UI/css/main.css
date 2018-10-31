@@ -1,0 +1,149 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+}
+nav{
+    flex:0 0 auto;
+    background: #0D1313;
+    color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+nav ul li a{
+    display: block;
+    color: #fff;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    transition: color is ease, background is ease, padding is ease;
+}
+/* the transition properties are defined below */
+nav  ul li a:hover{
+    color: #f5f5f5;
+    padding-left: 60px;
+    background: #2b98f0;
+
+}
+#nav-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 10px;
+}
+
+#nav-top h3{
+    font-size: 30px;
+    padding: 5px;
+    color: #fff;
+    border: 3px solid #00B4CC;
+    transition: color 2s, ease background 2s ease;
+    /* transition:  */
+}
+#nav-top h3:hover{
+    background: #2b98f0;
+    color:#f5f5f5;
+}
+
+#btn-menu{
+    padding: 5px;
+    border:2px solid #2b98f0;
+    cursor:pointer;
+    align-self:center;
+}
+
+.bar1,
+.bar2,
+.bar3{
+    height: 5px;
+    width: 35px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform is ease;
+}
+.turn .bar1{
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+.turn .bar2{
+    opacity: 0;
+}
+.turn .bar3{
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+@media screen and (min-width:690px){
+    nav{
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        color: #fff;
+    }
+    #btn-menu{
+        display: none;
+    }
+    nav ul{
+        flex: 1 1 auto;
+        display: flex!important;
+        flex-wrap: wrap;
+    }
+    nav ul li{
+        /* flex grow,shrink,px  */
+        flex: 1 0 125px;
+    }
+    nav ul a{
+        text-align: center;
+    }
+    nav ul a:hover{
+        padding: 10px!important;
+    }
+}
+
+
+
+/* end of nav */
+
+/* sign up form */
+/* end of sign up form */
+
+/* footer */
+footer{
+    background-color: #191716;
+    padding: 08px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.footer-text{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #e0e2db;
+    margin-bottom: 10px;
+}
+.footer-icons{
+    font-size: 30px;
+}
+
+.footer-icons .fa{
+    margin-right: 10px;
+    color: #e0e2db;
+    transition: transform 2s;
+}
+.footer-icons .fa:hover{
+    color: #4CAF50;
+    transform:translateY(-15px);
+}
+
+
+
+
+
+
