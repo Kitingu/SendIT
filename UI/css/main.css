@@ -43,8 +43,8 @@ nav  ul li a:hover{
 #nav-top h3{
     font-size: 30px;
     padding: 5px;
-    color: #fff;
-    border: 3px solid #00B4CC;
+    color: #00B4CC;
+    border: 3px solid #fff;
     transition: color 2s, ease background 2s ease;
     /* transition:  */
 }
@@ -55,7 +55,7 @@ nav  ul li a:hover{
 
 #btn-menu{
     padding: 5px;
-    border:2px solid #2b98f0;
+    border:2px solid #fff;
     cursor:pointer;
     align-self:center;
 }
