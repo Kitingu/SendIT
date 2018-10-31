@@ -8,6 +8,7 @@
   <title>Send IT</title>
   <!-- main css -->
   <link rel="stylesheet" href="/UI/css/main.css">
+  <link rel="stylesheet" href="/UI/css/signup.css">
   <!-- font awesome icons css -->
   <link rel="stylesheet" href="/UI/font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- link to google fonts-->
@@ -43,7 +44,31 @@
 
 
   <!-- sign up form -->
-  
+  <div class="wrapper">
+    <div class="container">
+        <h2>Welcome SendIT courier services</h2>
+        
+        <hr>
+        <form action="">
+            <h1>Sign Up Now</h1>
+            <input type="text" placeholder="Enter Full Name" name="full_name" required>
+
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <input type="password" placeholder="Repeat Password" name="psw_confirm" required>
+                
+            <div class="clearfix">
+                <button type="button" class="cancelbtn"  onclick="location.href='index.html';">Cancel</button>
+                <button type="submit" class="sign">Sign Up</button>
+            </div>
+        </form>
+        <p>Already have an account? <a href="login.html">Click here</a></p>
+    </div>
+  </div>
   <!-- end of sign up form -->
   <!-- jquery link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
