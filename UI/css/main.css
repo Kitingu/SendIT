@@ -22,9 +22,10 @@ nav ul li a{
     display: block;
     color: #fff;
     background: transparent;
+    text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     transition: color is ease, background is ease, padding is ease;
 }
 /* the transition properties are defined below */
