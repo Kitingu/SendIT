@@ -111,9 +111,38 @@ nav  ul li a:hover{
 
 /* end of nav */
 
-/* sign up form */
-/* end of sign up form */
+/* --------banner---------- */
+#banner{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/UI/images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* the actual items on the banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-btn{
+    display: flex;
+    justify-content: space-between;
+}
 
+.banner-btn button{
+    font-size: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #00B4CC;
+}
+.banner-btn button:hover{
+    color: #e0e2db;
+    background: #00B4CC;
+}
+/* --------end of banner----- */
 /* footer */
 footer{
     position: fixed;
