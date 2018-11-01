@@ -6,3 +6,12 @@ $(document).ready(function(){
         $('#btn-menu').toggleClass('turn')
     }
 })
+
+function cancelOrder() {
+    var txt;
+    if (confirm("Are you sure you want to cancel?")) {
+        message = "Order cancel successfully!";
+    } else {
+        message = "Order not cancelled!";
+    }
+}

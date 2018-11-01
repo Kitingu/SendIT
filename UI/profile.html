@@ -9,6 +9,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="/UI/css/main.css">
     <link rel="stylesheet" href="/UI/css/profile.css">
+    <link rel="stylesheet" href="/UI/css/tables.css">
     <!-- font awesome icons css -->
     <link rel="stylesheet" href="/UI/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- link to google fonts-->
@@ -64,17 +65,10 @@
             <div class="user-stats">
 
                 <ul>
-                    <li><span class="profile-stat-count">12</span> Delivered orders</li>
-                    <li><span class="profile-stat-count">3</span> On transit orders</li>
-                    <li><span class="profile-stat-count">2</span> Canceled orders</li>
+                    <li><span class="profile-stat-count">3</span> Delivered orders</li>
+                    <li><span class="profile-stat-count">2</span> On transit orders</li>
+                    <li><span class="profile-stat-count">1</span> Canceled orders</li>
                 </ul>
-
-            </div>
-
-            <div class="profile-bio">
-
-                <p><span class="profile-real-name">Anthony Martial</span> Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit </p>
 
             </div>
 
@@ -84,7 +78,48 @@
     </div>
     <!-- End of container -->
 
+    <table class="orders">
+        <caption> On transit orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">pending</td>
+                <td><button onclick="cancelOrder()"class="sign">Cancel order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Parcel-id">2</td>
+                <td data-label="Weight">0.54 kgs</td>
+                <td data-label="Pick up location">Mombasa</td>
+                <td data-label="Destination">Voi</td>
+                <td data-label="Receiver contact"> 0712364885</td>
+                <td data-label="Price">70</td>
+                <td data-label="Status">Pending</td>
+                <td><button onclick="cancelOrder()"class="sign">Cancel order</button></td>
+            </tr>
+          
+        </tbody>
 
+
+
+    </table>
+
+    </div>
 
 
     <!-- jquery link -->
