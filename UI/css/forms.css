@@ -5,8 +5,10 @@ body{
     
 }
 .wrapper{
-    margin: 10px auto;
+    margin: 15px auto;
     width: 40%;
+    position: relative;
+    margin-bottom: 30px;
 }
 .login-wrapper{
     height: 75vh;

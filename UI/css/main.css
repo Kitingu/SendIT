@@ -116,12 +116,17 @@ nav  ul li a:hover{
 
 /* footer */
 footer{
+    position: fixed;
     background-color: #191716;
-    padding: 08px;
+    /* padding: 08px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+    /* position: fixed; */
 }
 .footer-text{
     text-transform: uppercase;
