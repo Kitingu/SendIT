@@ -58,90 +58,94 @@
             <div class="profile-user-settings">
 
                 <h1 class="username">Admin</h1>
+                <p> Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, magnam!</p>
 
 
 
             </div>
-
-            <!-- End of container -->
-            <!-- pupdate location table -->
-            <table class="orders">
-                <caption> On transit orders</caption>
-                <thead>
-                    <tr>
-                        <th>Parcel-id</th>
-                        <th>Parcel Weight</th>
-                        <th>Pick up location</th>
-                        <th>Destination</th>
-                        <th>Receiver contact</th>
-                        <th>Price</th>
-                        <th>Status</th>
-                        <th>Change status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Parcel-id">1</td>
-                        <td data-label="Weight">0.52 kgs</td>
-                        <td data-label="Pick up location">Machakos</td>
-                        <td data-label="Destination">Nairobi</td>
-                        <td data-label="Receiver contact"> 0712345645</td>
-                        <td data-label="Price">100</td>
-                        <td data-label="Status">pending</td>
-                        <td data-label="Change status"> <select class="select">
-                                <option value="0">Delivered:</option>
-                                <option value="1">On transit</option>
-                            </select>
-                        </td>
-                        <td><button onclick="updateLocation()" class="select">Change location</button>
-                            <button class="sign">Submit changes</button></td>
-                    </tr>
-                    <tr>
-                        <td data-label="Parcel-id">2</td>
-                        <td data-label="Weight">0.54 kgs</td>
-                        <td data-label="Pick up location">Mombasa</td>
-                        <td data-label="Destination">Voi</td>
-                        <td data-label="Receiver contact"> 0712364885</td>
-                        <td data-label="Price">70</td>
-                        <td data-label="Status">Pending</td>
-                        <td data-label="Change status"> <select class="select">
-                                <option value="0">Delivered:</option>
-                                <option value="1">On transit</option>
-                            </select>
-                        </td>
-                        <td><button onclick="updateLocation()" class="select">Change location</button>
-                            <button class="sign">Submit changes</button></td>
-                    </tr>
-
-                </tbody>
-
-
-
-            </table>
-
         </div>
 
-        <!-- end of pending orders table -->
+        <!-- End of container -->
+        <!-- pupdate location table -->
+        <table class="orders">
+            <caption> On transit orders</caption>
+            <thead>
+                <tr>
+                    <th>Parcel-id</th>
+                    <th>Parcel Weight</th>
+                    <th>Pick up location</th>
+                    <th>Destination</th>
+                    <th>Receiver contact</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Change status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Parcel-id">1</td>
+                    <td data-label="Weight">0.52 kgs</td>
+                    <td data-label="Pick up location">Machakos</td>
+                    <td data-label="Destination">Nairobi</td>
+                    <td data-label="Receiver contact"> 0712345645</td>
+                    <td data-label="Price">100</td>
+                    <td data-label="Status">pending</td>
+                    <td data-label="Change status"> <select class="select">
+                            <option value="0">Delivered:</option>
+                            <option value="1">On transit</option>
+                        </select>
+                    </td>
+                    <td><button onclick="updateLocation()" class="select">Change location</button>
+                        <button class="sign">Submit changes</button></td>
+                </tr>
+                <tr>
+                    <td data-label="Parcel-id">2</td>
+                    <td data-label="Weight">0.54 kgs</td>
+                    <td data-label="Pick up location">Mombasa</td>
+                    <td data-label="Destination">Voi</td>
+                    <td data-label="Receiver contact"> 0712364885</td>
+                    <td data-label="Price">70</td>
+                    <td data-label="Status">Pending</td>
+                    <td data-label="Change status"> <select class="select">
+                            <option value="0">Delivered:</option>
+                            <option value="1">On transit</option>
+                        </select>
+                    </td>
+                    <td><button onclick="updateLocation()" class="select">Change location</button>
+                        <button class="sign">Submit changes</button></td>
+                </tr>
 
-        <!-- jquery link -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <!-- footer -->
-        <footer>
-            <div class="footer-text">
-                <h3>&copy;SendIT 2018.</h3>
-            </div>
-            <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-        </footer>
+            </tbody>
 
-        <!-- end of footer -->
 
-        <script src="./js/main.js"></script>
+
+        </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
+
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- footer -->
+    <footer>
+        <div class="footer-text">
+            <h3>&copy;SendIT 2018.</h3>
+        </div>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
