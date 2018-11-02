@@ -115,7 +115,7 @@ nav  ul li a:hover{
 /* --------banner---------- */
 #banner{
     min-height: 70vh;
-    background: linear-gradient(rgba(0,0,255,0.3),rgba(0,0,255,0.2)),url(/UI/images/background.jpg);
+    background: linear-gradient(rgba(0,0,255,0.2),rgba(0,0,255,0.1)),url("../images/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -137,7 +137,7 @@ nav  ul li a:hover{
     margin: 0 10px;
     background: transparent;
     color: #fff;
-    border: 2px solid #00B4CC;
+    border: 2px solid #000000;
 }
 .banner-btn button:hover{
     color: #e0e2db;
@@ -154,6 +154,7 @@ nav  ul li a:hover{
     .title{
         text-align: center;
         text-transform: uppercase;
+        color: #00B4CC;
     }
     .post-container {
     max-width: 90vw;

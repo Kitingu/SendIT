@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/tables.css">
     <!-- font awesome icons css -->
-    <link rel="stylesheet" href="/UI/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- link to google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -31,10 +31,11 @@
             </div>
             <!-- navigation links -->
             <ul id="links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="orders.html">Orders</a></li>
                 <li><a href="create_orders.html">Create order</a></li>
+                <li><a href="admin.html">Admin</a></li>
                 <li><a href="sign_up.html">Sign Up</a></li>
                 <li><a href="login.html">Log in</a></li>
             </ul>
@@ -104,10 +105,10 @@
                         <td data-label="Price">70</td>
                         <td data-label="Status">Pending</td>
                         <td data-label="Change status"> <select class="select">
-                            <option value="0">Delivered:</option>
-                            <option value="1">On transit</option>
-                        </select>
-                    </td>
+                                <option value="0">Delivered:</option>
+                                <option value="1">On transit</option>
+                            </select>
+                        </td>
                         <td><button onclick="updateLocation()" class="select">Change location</button>
                             <button class="sign">Submit changes</button></td>
                     </tr>
@@ -140,7 +141,7 @@
 
         <!-- end of footer -->
 
-        <script src="/UI/js/main.js"></script>
+        <script src="./js/main.js"></script>
 </body>
 
 </html>
