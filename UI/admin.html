@@ -87,12 +87,12 @@
                         <td data-label="Receiver contact"> 0712345645</td>
                         <td data-label="Price">100</td>
                         <td data-label="Status">pending</td>
-                        <td data-label="Change status"> <select>
+                        <td data-label="Change status"> <select class="select">
                                 <option value="0">Delivered:</option>
                                 <option value="1">On transit</option>
                             </select>
                         </td>
-                        <td><button onclick="updateLocation()" class="sign">Change location</button>
+                        <td><button onclick="updateLocation()" class="select">Change location</button>
                             <button class="sign">Submit changes</button></td>
                     </tr>
                     <tr>
@@ -103,7 +103,12 @@
                         <td data-label="Receiver contact"> 0712364885</td>
                         <td data-label="Price">70</td>
                         <td data-label="Status">Pending</td>
-                        <td><button onclick="updateLocation()" class="sign">Change location</button>
+                        <td data-label="Change status"> <select class="select">
+                            <option value="0">Delivered:</option>
+                            <option value="1">On transit</option>
+                        </select>
+                    </td>
+                        <td><button onclick="updateLocation()" class="select">Change location</button>
                             <button class="sign">Submit changes</button></td>
                     </tr>
 

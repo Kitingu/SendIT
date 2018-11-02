@@ -40,6 +40,13 @@ table {
     padding: 14px 20px;
     background-color: #ac1f1c;
   }
+  .select{
+    background-color:  #e0e2db;
+    color: #000000;
+    border: none;
+    font-size: 1em;
+    padding: 10px 6px;
+  }
   table th {
     font-size: .98em;
     letter-spacing: .1em;
