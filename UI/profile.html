@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send IT</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/tables.css">
+    <!-- font awesome icons css -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <!-- navigation bar -->
+        <nav>
+            <div id="nav-top">
+                <h3>SendIT</h3>
+                <div id="btn-menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <!-- navigation links -->
+            <ul id="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="create_orders.html">Create order</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- end of nav -->
+
+
+    <div class="container">
+
+        <div class="profile">
+
+            <div class="profile-image">
+
+                <img src="./images/profile.jpg" alt="">
+
+            </div>
+
+            <div class="profile-user-settings">
+
+                <h1 class="username">Anthony Martial</h1>
+
+
+
+            </div>
+
+            <div class="user-stats">
+
+                <ul>
+                    <li><span class="profile-stat-count">3</span> Delivered orders</li>
+                    <li><span class="profile-stat-count">2</span> On transit orders</li>
+                    <li><span class="profile-stat-count">1</span> Canceled orders</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- End of profile section -->
+
+    </div>
+    <!-- End of container -->
+
+    <!-- pending delivery order table -->
+    <table class="orders">
+        <caption> On transit orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">pending</td>
+                <td><button onclick="updateDestination()" class="sign">update destination</button>
+                    <button onclick="cancelOrder()" class="sign">Cancel order</button></td>
+            </tr>
+            <tr>
+                <td data-label="Parcel-id">2</td>
+                <td data-label="Weight">0.54 kgs</td>
+                <td data-label="Pick up location">Mombasa</td>
+                <td data-label="Destination">Voi</td>
+                <td data-label="Receiver contact"> 0712364885</td>
+                <td data-label="Price">70</td>
+                <td data-label="Status">Pending</td>
+                <td><button onclick="updateDestination()" class="sign">update destination</button>
+                    <button onclick="cancelOrder()" class="sign">Cancel order</button></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
+
+    <table class="orders">
+        <caption> Delivered orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">Delivered</td>
+                <td><button class="sign">View details</button></td>
+
+            </tr>
+            <tr>
+                <td data-label="Parcel-id">2</td>
+                <td data-label="Weight">0.54 kgs</td>
+                <td data-label="Pick up location">Mombasa</td>
+                <td data-label="Destination">Voi</td>
+                <td data-label="Receiver contact"> 0712364885</td>
+                <td data-label="Price">70</td>
+                <td data-label="Status">Delivered</td>
+                <td><button class="sign">View details</button></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
+
+    <table class="orders">
+        <caption>Cancelled orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">Cancelled</td>
+                <td><button class="sign">View details</button></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- footer -->
+    <footer>
+        <div class="footer-text">
+            <h3>&copy;SendIT 2018.</h3>
+        </div>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
