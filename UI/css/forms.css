@@ -1,53 +1,53 @@
-body{
-/*     
-    background: url(/UI/images/background2.jpg);
-    background-repeat: no-repeat; */
-    
-}
-.wrapper{
-    margin: 10px auto;
+.wrapper {
+    margin: 5% auto;
     width: 40%;
     position: relative;
-    margin-bottom: 30px;
+    height:80vh;
+    /* margin-bottom: 30px; */
 }
-.login-wrapper{
+
+.login-wrapper {
     height: 75vh;
-    margin: 10px auto;
+    margin: 5% auto 15px;
     width: 40%;
 }
-.container{
+
+.container {
     border: 0px;
-    background: rgba(0,0,0,0.7);
+    background: #07639d;
     color: #ffff;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 3%;
     transition: 1s;
-   }
-   
-h2{
-   margin: 0;
-   padding: 0;
-   color: #00B4CC;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
 
 /* input fields span full width */
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #ffffff;
+    background: #fff;
 }
 
 /* onfocus gives input fields a bg color */
+
 input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 
 /*Buttons */
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -59,40 +59,48 @@ button {
     width: 100%;
     opacity: 0.9;
 }
+
 button:hover {
-    opacity:1;
+    opacity: 1;
 }
 
 .cancelbtn {
     padding: 14px 20px;
     background-color: #ac1f1c;
 }
-.sign{
+
+.sign {
     background-color: #00B4CC;
 }
+
 .cancelbtn, .sign {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
-.container form{
+
+.container form {
     padding: 0 30px 0 30px;
     text-align: left;
 }
-.container h1{
+
+.container h1 {
     text-align: center;
 }
+
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
 
 /* Clear floats */
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
- a{
+
+a {
     font-style: bold;
     text-decoration: none;
     color: #00B4CC;
@@ -100,16 +108,23 @@ hr {
 
 @media screen and (max-width: 500px) {
     .cancelbtn, .sign {
-       width: 100%;
+        width: 100%;
     }
 }
+
 @media screen and (max-width: 996px) {
     .wrapper {
-      width: 70%;
+        width: 70%;
+    }
+    .login-wrapper {
+        height: 75vh;
+        margin: 10px auto;
+        width: 80%;
     }
 }
+
 @media screen and (max-width: 400px) {
     .wrapper {
-      width: 80%;
+        width: 80%;
     }
 }
