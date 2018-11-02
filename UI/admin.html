@@ -75,6 +75,7 @@
                         <th>Receiver contact</th>
                         <th>Price</th>
                         <th>Status</th>
+                        <th>Change status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,8 +87,13 @@
                         <td data-label="Receiver contact"> 0712345645</td>
                         <td data-label="Price">100</td>
                         <td data-label="Status">pending</td>
+                        <td data-label="Change status"> <select>
+                                <option value="0">Delivered:</option>
+                                <option value="1">On transit</option>
+                            </select>
+                        </td>
                         <td><button onclick="updateLocation()" class="sign">Change location</button>
-                            <button  class="sign">Submit changes</button></td>
+                            <button class="sign">Submit changes</button></td>
                     </tr>
                     <tr>
                         <td data-label="Parcel-id">2</td>
