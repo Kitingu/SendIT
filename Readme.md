@@ -19,7 +19,7 @@ provides courier quotes based on weight categories.
 
 2. Open teminal and navigate to the folder
 
-3. git clone https://kitingu.github.io/SendIT
+3. git clone https://github.com/kitingu/SendIT
 
 4. cd to UI folder and open the index page with your a browser of your choice
 
