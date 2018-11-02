@@ -10,8 +10,18 @@ $(document).ready(function(){
 function cancelOrder() {
     var txt;
     if (confirm("Are you sure you want to cancel?")) {
-        message = "Order cancel successfully!";
+        alert("Order cancelled successfully!");
     } else {
-        message = "Order not cancelled!";
+        alert( "Order not cancelled!");
+    }
+}
+
+function updateDestination() {
+    var destination= prompt("Please enter the new destination");
+    if (destination) {
+        alert("destination updated successfully");
+    }
+    else{
+        alert("no changes were made")
     }
 }
