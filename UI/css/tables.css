@@ -37,12 +37,13 @@ table {
 
   }
   table th {
-    font-size: .85em;
+    font-size: .98em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    margin: 2px;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     table {
       border: 0;
     }

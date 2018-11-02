@@ -78,6 +78,7 @@
     </div>
     <!-- End of container -->
 
+    <!-- pending delivery order table -->
     <table class="orders">
         <caption> On transit orders</caption>
         <thead>
@@ -111,7 +112,7 @@
                 <td data-label="Receiver contact"> 0712364885</td>
                 <td data-label="Price">70</td>
                 <td data-label="Status">Pending</td>
-                <td><button onclick="updateDestination()" class="sign">Update destination</button>
+                <td><button onclick="updateDestination()" class="sign">update destination</button>
                     <button onclick="cancelOrder()" class="sign">Cancel order</button></td>
             </tr>
 
@@ -123,7 +124,88 @@
 
     </div>
 
+    <!-- end of pending orders table -->
 
+    <table class="orders">
+        <caption> Delivered orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">Delivered</td>
+                <td><button class="sign">View details</button></td>
+
+            </tr>
+            <tr>
+                <td data-label="Parcel-id">2</td>
+                <td data-label="Weight">0.54 kgs</td>
+                <td data-label="Pick up location">Mombasa</td>
+                <td data-label="Destination">Voi</td>
+                <td data-label="Receiver contact"> 0712364885</td>
+                <td data-label="Price">70</td>
+                <td data-label="Status">Delivered</td>
+                <td><button class="sign">View details</button></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
+
+    <table class="orders">
+        <caption>Cancelled orders</caption>
+        <thead>
+            <tr>
+                <th>Parcel-id</th>
+                <th>Parcel Weight</th>
+                <th>Pick up location</th>
+                <th>Destination</th>
+                <th>Receiver contact</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Parcel-id">1</td>
+                <td data-label="Weight">0.52 kgs</td>
+                <td data-label="Pick up location">Machakos</td>
+                <td data-label="Destination">Nairobi</td>
+                <td data-label="Receiver contact"> 0712345645</td>
+                <td data-label="Price">100</td>
+                <td data-label="Status">Cancelled</td>
+                <td><button class="sign">View details</button></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    </div>
+
+    <!-- end of pending orders table -->
     <!-- jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
