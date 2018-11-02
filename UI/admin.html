@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Send IT</title>
     <!-- main css -->
-    <link rel="stylesheet" href="/UI/css/main.css">
-    <link rel="stylesheet" href="/UI/css/profile.css">
-    <link rel="stylesheet" href="/UI/css/tables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/tables.css">
     <!-- font awesome icons css -->
     <link rel="stylesheet" href="/UI/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- link to google fonts-->
@@ -62,27 +62,74 @@
 
             </div>
 
-    <!-- End of container -->
+            <!-- End of container -->
+            <!-- pupdate location table -->
+            <table class="orders">
+                <caption> On transit orders</caption>
+                <thead>
+                    <tr>
+                        <th>Parcel-id</th>
+                        <th>Parcel Weight</th>
+                        <th>Pick up location</th>
+                        <th>Destination</th>
+                        <th>Receiver contact</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Parcel-id">1</td>
+                        <td data-label="Weight">0.52 kgs</td>
+                        <td data-label="Pick up location">Machakos</td>
+                        <td data-label="Destination">Nairobi</td>
+                        <td data-label="Receiver contact"> 0712345645</td>
+                        <td data-label="Price">100</td>
+                        <td data-label="Status">pending</td>
+                        <td><button onclick="updateLocation()" class="sign">Change location</button>
+                            <button  class="sign">Submit changes</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Parcel-id">2</td>
+                        <td data-label="Weight">0.54 kgs</td>
+                        <td data-label="Pick up location">Mombasa</td>
+                        <td data-label="Destination">Voi</td>
+                        <td data-label="Receiver contact"> 0712364885</td>
+                        <td data-label="Price">70</td>
+                        <td data-label="Status">Pending</td>
+                        <td><button onclick="updateLocation()" class="sign">Change location</button>
+                            <button class="sign">Submit changes</button></td>
+                    </tr>
 
-    <!-- jquery link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- footer -->
-    <footer>
-        <div class="footer-text">
-            <h3>&copy;SendIT 2018.</h3>
+                </tbody>
+
+
+
+            </table>
+
         </div>
-        <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-    </footer>
 
-    <!-- end of footer -->
+        <!-- end of pending orders table -->
 
-    <script src="/UI/js/main.js"></script>
+        <!-- jquery link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <!-- footer -->
+        <footer>
+            <div class="footer-text">
+                <h3>&copy;SendIT 2018.</h3>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <!-- end of footer -->
+
+        <script src="/UI/js/main.js"></script>
 </body>
 
 </html>

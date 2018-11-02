@@ -36,6 +36,10 @@ table {
     opacity: 0.9;
 
   }
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #ac1f1c;
+  }
   table th {
     font-size: .98em;
     letter-spacing: .1em;
@@ -70,6 +74,10 @@ table {
     }
     .sign{
         width: 30%;
+    }
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #ac1f1c;
     }
 
     table td {

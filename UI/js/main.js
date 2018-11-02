@@ -25,3 +25,12 @@ function updateDestination() {
         alert("no changes were made")
     }
 }
+
+function updateLocation() {
+    var location= prompt("Please enter the new location");
+    if (location) {
+    }
+    else{
+        alert("no changes were made")
+    }
+}
