@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/tables.css">
+    <link rel="stylesheet" href="./css//modals.css">
     <!-- font awesome icons css -->
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- link to google fonts-->
@@ -78,7 +79,18 @@
 
     </div>
     <!-- End of container -->
-
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+          <h1>Change destination</h1>
+      
+          <label for="email"><b>Destination</b></label>
+          <input type="text" placeholder="Change destination" name="destination" required>
+      
+          
+          <button type="submit" class="sign">Submit</button>
+          <button type="button" class="cancel-btn" onclick="closeForm()">Close</button>
+        </form>
+      </div>
     <!-- pending delivery order table -->
     <table class="orders">
         <caption> On transit orders</caption>
@@ -103,7 +115,7 @@
                 <td data-label="Receiver contact"> 0712345645</td>
                 <td data-label="Price">100</td>
                 <td data-label="Status">pending</td>
-                <td><button onclick="updateDestination()" class="sign">update destination</button>
+                <td><button onclick="openForm()" class="sign">update destination</button>
                     <button onclick="cancelOrder()" class="cancel-btn">Cancel order</button></td>
             </tr>
             <tr>
@@ -114,7 +126,7 @@
                 <td data-label="Receiver contact"> 0712364885</td>
                 <td data-label="Price">70</td>
                 <td data-label="Status">Pending</td>
-                <td><button onclick="updateDestination()" class="sign">update destination</button>
+                <td><button onclick="openForm()" class="sign">update destination</button>
                     <button onclick="cancelOrder()" class="cancel-btn">Cancel order</button></td>
             </tr>
 
@@ -200,7 +212,7 @@
                 <td data-label="Status">Cancelled</td>
                 <td><button class="sign">View details</button></td>
             </tr>
-
+            
         </tbody>
 
 

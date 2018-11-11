@@ -131,123 +131,64 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-.banner-btn {
-    display: flex;
-    justify-content: space-between;
+.banner-form {
+    text-align: center;
+    background: rgba(214, 214, 219, 0.5)
 }
 
-.banner-btn button {
-    font-size: 30px;
-    padding: 15px;
-    text-transform: uppercase;
-    margin: 0 10px;
-    background: transparent;
-    color: #fff;
-    border: 2px solid #05446c;
+input {
+    margin: 20px;
 }
 
-.banner-btn button:hover {
-    color: #fff;
-    background: #05446c;
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 2px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    background-color: #05446c;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    box-sizing: border-box;
 }
 
 /* --------end of banner----- */
 
 /*posts*/
 
-#posts {
-    background: #fff;
-    padding: 20px 0 80px 0;
-}
-
-.title {
+.Heading p {
+    padding: 20px;
     text-align: center;
-    text-transform: uppercase;
-    color: #001f45;
-}
-
-.post-container {
-    max-width: 90vw;
-    margin: 0 auto;
-}
-
-.post-item {
-    background-color: #fff;
-    color: #000000;
-    margin: 20px 0;
-}
-
-#posts img {
-    width: 100%;
-    display: block;
-}
-
-.img-container {
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-}
-
-.img-container .fa {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: #001f45;
-    opacity: 0;
-    transition: opacity 4s;
-}
-
-.img-container:hover img {
-    opacity: 0.4;
-}
-
-/* .img-container:hover .fa {
-    opacity: 1;
-    }
-*/
-
-.text-container {
-    padding: 10px 5px 30px 5px;
-}
-
-.text-container p {
-    margin: 15px 0 25px 0;
-}
-
-.text-container a {
-    text-decoration: none;
+    color: #05446c;
+    background: rgba(214, 214, 219, 0.5);
     font-size: 20px;
-    padding: 5px;
-    border: 2px solid #001f45;
-    color: #fff;
-    margin-bottom: 20px;
-    margin-left: 35%;
-    background-color: #001f45;
 }
 
-.text-container a:hover {
-    color: #001f45;
-    border-color: #fff;
-    background-color: #fff;
+.posts {
+    background: #fff;
+    /* padding: 10px 25px; */
 }
 
-@media screen and (min-width:576px) {
-    .post-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-    }
+.post {
+    display: flex;
+    padding: 10px;
 }
 
-@media screen and (min-width:992px) {
-    .post-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-    }
+.whychooseus {
+    width: 33%;
+    text-align: center;
+    padding: 5%;
+}
+
+.whychooseus h3 {
+    color: #05446c;
 }
 
 /* end of posts */
