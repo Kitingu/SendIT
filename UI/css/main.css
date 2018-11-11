@@ -162,17 +162,20 @@ input[type=button] {
 /* --------end of banner----- */
 
 /*posts*/
-.Heading p{
+
+.Heading p {
     padding: 20px;
     text-align: center;
     color: #05446c;
     background: rgba(214, 214, 219, 0.5);
     font-size: 20px;
 }
+
 .posts {
     background: #fff;
     /* padding: 10px 25px; */
 }
+
 .post {
     display: flex;
     padding: 10px;
@@ -183,10 +186,10 @@ input[type=button] {
     text-align: center;
     padding: 5%;
 }
-.whychooseus h3{
+
+.whychooseus h3 {
     color: #05446c;
 }
-
 
 /* end of posts */
 
