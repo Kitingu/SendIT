@@ -92,6 +92,8 @@ table th {
   }
   .cancel-btn {
     width: 30%;
+    font-size: 1em;
+    padding: 10px 6px;
   }
   table td {
     border-bottom: 1px solid #ddd;
